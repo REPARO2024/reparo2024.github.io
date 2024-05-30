@@ -24,11 +24,7 @@
     }
     .custom-container {
       max-width: 100%;
-      padding: 0 1.5rem;
-    }
-    .column.is-one-sixth {
-      width: 16.66%;
-      padding: 10px;
+      padding: 0 1.3rem;
     }
     .custom-image {
       width: 100%; /* Adjust width as needed */
@@ -40,6 +36,7 @@
     }
     .custom-paragraph-2 {
       font-weight: bold; /* Make the font bold */
+      font-size: 1.5em;
     }
     .icon-container {
     display: flex;
@@ -103,25 +100,25 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-            This paper presents REPARO, an innovative approach designed to address the challenges of 
+          <p style="font-size: 1.3em;">
+            This paper presents <strong>REPARO</strong>, an innovative approach designed to address the challenges of 
             compositional 3D assets generation from single images. Traditional image-to-3D models 
             often struggle with scenes containing multiple objects due to biases and occlusion complexities. 
           </p>
-          <p>
-            To address this challenge, we present REPARO, a novel approach for compositional 3D asset 
-            generation from single images. REPARO employs a two-step process: first, it extracts 
+          <p style="font-size: 1.3em;">
+            To address this challenge, we present <strong>REPARO</strong>, a novel approach for compositional 3D asset 
+            generation from single images. <strong>REPARO</strong> employs a two-step process: first, it extracts 
             individual objects from the scene and reconstructs their 3D meshes using off-the-shelf 
             image-to-3D models; then, it optimizes the layout of these meshes through differentiable 
             rendering techniques, ensuring coherent scene composition. 
           </p>
-          <p>
+          <p style="font-size: 1.3em;">
             By integrating advanced techniques such as Optimal Transport for layout alignment and 
-            high-level semantic integration for contextual coherence, REPARO significantly enhances 
+            high-level semantic integration for contextual coherence, <strong>REPARO</strong> significantly enhances 
             object independence, detail accuracy, and overall scene coherence. Extensive evaluation 
-            on multi-object scenes demonstrates REPARO's effectiveness, establishing it as a robust 
+            on multi-object scenes demonstrates <strong>REPARO</strong>'s effectiveness, establishing it as a robust 
             solution for multi-object 3D scene generation. With promising applications in augmented reality, 
-            virtual reality, gaming, and beyond, REPARO offers a comprehensive approach to address 
+            virtual reality, gaming, and beyond, <strong>REPARO</strong> offers a comprehensive approach to address 
             the complexities of multi-object 3D scene generation from single images.
           </p>
         </div>
@@ -155,8 +152,8 @@
         <!-- Quantitative Experiment -->
         <h3 class="title is-4">Quantitative experiment</h3>
         <div class="content has-text-justified">
-          <p>
-            We conducted a quantitative experiment to evaluate the performance of REPARO compared to existing methods. The results demonstrate that REPARO achieves superior accuracy and coherence in generating multi-object 3D scenes from single images.
+          <p style="font-size: 1.3em;">
+            We conducted a quantitative experiment to evaluate the performance of <strong>REPARO</strong> compared to existing methods. The results demonstrate that <strong>REPARO</strong> achieves superior accuracy and coherence in generating multi-object 3D scenes from single images.
           </p>
           <div class="publication-image">
             <img src="./static/images/Quantitative_experiment.png" alt="Quantitative Experiment Results">
@@ -167,165 +164,172 @@
         <h3 class="title is-4">Qualitative experiment</h3>
         <div class="content has-text-centered">
           <!-- First row -->
-          <div class="columns">
-            <div class="column is-2">
+          <div class="columns is-centered">
+            <div class="column is-3">
+              <p style="font-size: 1.3em;">Reference</p>
               <img src="./static/videos/demo_new/city_taxi/CITY_TAXI_POLICE_CAR.png" alt="Qualitative Experiment Image 1" class="custom-image">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
+              <p style="font-size: 1.3em;">DreamGaussian</p>
               <img src="./static/videos/dg/CITY_TAXI_POLICE_CAR/CITY_TAXI_POLICE_CAR.gif" alt="Qualitative Experiment GIF 1">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
+              <p style="font-size: 1.3em;">LRM</p>
               <img src="./static/videos/lrm/CITY_TAXI_POLICE_CAR/taxi.gif" alt="Qualitative Experiment GIF 2">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
+              <p style="font-size: 1.3em;">Wonder3D</p>
               <img src="./static/videos/w3/CITY_TAXI_POLICE_CAR_rgba/taxi.gif" alt="Qualitative Experiment GIF 3">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
+              <p class="custom-paragraph-2">REPARO(ours)</p>
               <img src="./static/videos/reparo_7/taxi/taxi.gif" alt="Qualitative Experiment GIF 4">
-            </div>
-            <div class="column is-2">
-              <img src="./static/videos/demo_new/city_taxi/000_render_our_0.gif" alt="Qualitative Experiment GIF">
             </div>
           </div>
 
           <!-- Second row -->
-          <div class="columns">
-            <div class="column is-2">
+          <div class="columns is-centered">
+            <div class="column is-3">
               <img src="./static/videos/demo_new/CONE/CONE_SORTING_kg5fbARBwts.png" alt="Qualitative Experiment Image 2" class="custom-image">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/dg/CONE_SORTING_kg5fbARBwts/CONE_SORTING_kg5fbARBwts.gif" alt="Qualitative Experiment GIF 5">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/lrm/CONE_SORTING_kg5fbARBwts/cone.gif" alt="Qualitative Experiment GIF 6">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/w3/CONE_SORTING_kg5fbARBwts_rgba/cone.gif" alt="Qualitative Experiment GIF 7">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/reparo_7/cone/cone.gif" alt="Qualitative Experiment GIF 8">
-            </div>
-            <div class="column is-2">
-              <img src="./static/videos/demo_new/CONE/000_render_our_0.gif" alt="Qualitative Experiment GIF">
             </div>
           </div>
 
           <!-- Third row -->
-          <div class="columns">
-            <div class="column is-2">
+          <div class="columns is-centered">
+            <div class="column is-3">
               <img src="./static/videos/demo_new/pounding/POUNDING_MUSHROOMS.png" alt="Qualitative Experiment Image 3" class="custom-image">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/dg/POUNDING_MUSHROOMS/POUNDING_MUSHROOMS.gif" alt="Qualitative Experiment GIF 9">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/lrm/POUNDING_MUSHROOMS/pounding.gif" alt="Qualitative Experiment GIF 10">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/w3/POUNDING_MUSHROOMS_rgba/pounding.gif" alt="Qualitative Experiment GIF 11">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/reparo_7/pounding/pounding.gif" alt="Qualitative Experiment GIF 12">
-            </div>
-            <div class="column is-2">
-              <img src="./static/videos/demo_new/pounding/000_render_our_0.gif" alt="Qualitative Experiment GIF">
             </div>
           </div>
 
           <!-- Fourth row -->
-          <div class="columns">
-            <div class="column is-2">
+          <div class="columns is-centered">
+            <div class="column is-3">
               <img src="./static/videos/demo_new/LEGO/LEGO_Duplo_Creative_Animals_10573.png" alt="Qualitative Experiment Image 4" class="custom-image">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/dg/LEGO_Duplo_Creative_Animals_10573/LEGO_Duplo_Creative_Animals_10573.gif" alt="Qualitative Experiment GIF 13">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/lrm/LEGO_Duplo_Creative_Animals_10573/lego.gif" alt="Qualitative Experiment GIF 14">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/w3/LEGO_Duplo_Creative_Animals_10573_rgba/lego.gif" alt="Qualitative Experiment GIF 15">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/reparo_7/lego/lego.gif" alt="Qualitative Experiment GIF 16">
-            </div>
-            <div class="column is-2">
-              <img src="./static/videos/demo_new/LEGO/000_render_our_0.gif" alt="Qualitative Experiment GIF">
             </div>
           </div>
 
           <!-- Fifth row -->
-          <div class="columns">
-            <div class="column is-2">
+          <div class="columns is-centered">
+            <div class="column is-3">
               <img src="./static/videos/demo_new/OBJ/Object.png" alt="Qualitative Experiment Image 5" class="custom-image">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/dg/Object/Object.gif" alt="Qualitative Experiment GIF 17">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/lrm/Object/obj.gif" alt="Qualitative Experiment GIF 18">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/w3/Object_rgba/obj.gif" alt="Qualitative Experiment GIF 19">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/reparo_7/object/obj.gif" alt="Qualitative Experiment GIF 20">
-            </div>
-            <div class="column is-2">
-              <img src="./static/videos/demo_new/OBJ/000_render_our_0.gif" alt="Qualitative Experiment GIF">
             </div>
           </div>
 
           <!-- Sixth row -->
-          <div class="columns">
-            <div class="column is-2">
+          <div class="columns is-centered">
+            <div class="column is-3">
               <img src="./static/videos/demo_new/speed_boat/SPEED_BOAT.png" alt="Qualitative Experiment Image 6" class="custom-image">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/dg/SPEED_BOAT/SPEED_BOAT.gif" alt="Qualitative Experiment GIF 21">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/lrm/SPEED_BOAT/speedboat.gif" alt="Qualitative Experiment GIF 22">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/w3/SPEED_BOAT_rgba/speedboat.gif" alt="Qualitative Experiment GIF 23">
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/reparo_7/speedboat/speedboat.gif" alt="Qualitative Experiment GIF 24">
-            </div>
-            <div class="column is-2">
-              <img src="./static/videos/demo_new/speed_boat/000_render_our_0.gif" alt="Qualitative Experiment GIF">
             </div>
           </div>
 
           <!-- Seventh row -->
-          <div class="columns">
-            <div class="column is-2">
+          <div class="columns is-centered">
+            <div class="column is-3">
               <img src="./static/videos/demo_new/tower/TOWER_TUMBLING.png" alt="Qualitative Experiment Image 7" class="custom-image">
-              <p class="custom-paragraph-1">Reference</p>
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/dg/TOWER_TUMBLING/TOWER_TUMBLING.gif" alt="Qualitative Experiment GIF 25">
-              <p>DreamGaussian</p>
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/lrm/TOWER_TUMBLING/tower.gif" alt="Qualitative Experiment GIF 26">
-              <p>LRM</p>
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/w3/TOWER_TUMBLING_rgba/tower.gif" alt="Qualitative Experiment GIF 27">
-              <p>Wonder3D</p>
             </div>
-            <div class="column is-2">
+            <div class="column is-3">
               <img src="./static/videos/reparo_7/tower/tower.gif" alt="Qualitative Experiment GIF 28">
-              <p class="custom-paragraph-2">REPARO(ours)</p>
-            </div>
-            <div class="column is-2">
-              <img src="./static/videos/demo_new/tower/000_render_our_0.gif" alt="Qualitative Experiment GIF">
-              <p class="custom-paragraph-2">Layout Alignment</p>
             </div>
           </div>
+        
+        <!-- Layout Alignment -->
+      <h3 class="title is-4">Layout Alignment</h3>
+      <div class="columns is-centered">
+        <div class="column is-4 is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+          <img src="./static/videos/demo_new/city_taxi/000_render_our_0.gif" alt="Qualitative Experiment GIF">
         </div>
+        <div class="column is-4 is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+          <img src="./static/videos/demo_new/CONE/000_render_our_0.gif" alt="Qualitative Experiment GIF">
+        </div>
+        <div class="column is-4 is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+          <img src="./static/videos/demo_new/pounding/000_render_our_0.gif" alt="Qualitative Experiment GIF">
+        </div>
+        <div class="column is-4 is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+          <img src="./static/videos/demo_new/LEGO/000_render_our_0.gif" alt="Qualitative Experiment GIF">
+        </div>
+      </div>
+
+        <div class="columns">
+          <div class="column is-4 is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+            <img src="./static/videos/demo_new/OBJ/000_render_our_0.gif" alt="Qualitative Experiment GIF">
+          </div>
+          <div class="column is-4 is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+            <img src="./static/videos/demo_new/speed_boat/000_render_our_0.gif" alt="Qualitative Experiment GIF">
+          </div>
+          <div class="column is-4 is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+            <img src="./static/videos/demo_new/tower/000_render_our_0.gif" alt="Qualitative Experiment GIF">
+          </div>
+        </div>
+        
       </div>
     </div>
   </div>
