@@ -41,6 +41,14 @@
     .custom-paragraph-2 {
       font-weight: bold; /* Make the font bold */
     }
+    .icon-container {
+    display: flex;
+    gap: 10px;
+    }
+    .icon-container i {
+        font-size: 50px;
+        color: #4A90E2;
+    }
   </style>
 </head>
 <body>
@@ -66,15 +74,9 @@
             <p><span class="superscript">3</span> Tencent Meeting, <span class="superscript">4</span> Harvard University</p>
           </div>
 
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <span class="link-block">
-                <a href="https://github.com/VincentHancoder/REPARO?tab=readme-ov-file" target="_blank"><i class="fas fa-code"></i>Code</a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/pdf/2405.18525" target="_blank"><i class="fas fa-file-pdf"></i>Paper</a>
-              </span>
-            </div>
+          <div class="icon-container">
+              <a href="https://github.com/VincentHancoder/REPARO?tab=readme-ov-file" target="_blank" title="View Code"><i class="fas fa-book" aria-hidden="true"></i></a>
+              <a href="https://arxiv.org/pdf/2405.18525" target="_blank" title="View Paper"><i class="fas fa-quote-right" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
